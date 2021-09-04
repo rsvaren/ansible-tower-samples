@@ -1,6 +1,7 @@
 ---
 - name: Ansible Copy Example Local to Remote
-  hosts: remoteserver
+  hosts: 172.18.1.30
+  remote_user: root
   tasks:
     - name: copying file with playbook
       become: true 
